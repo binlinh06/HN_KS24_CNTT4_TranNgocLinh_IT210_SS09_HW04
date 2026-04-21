@@ -1,0 +1,6 @@
+Phần 2 – So sánh & lựa chọn
+Tiêu chí	            Hidden Input	                            @SessionAttributes
+Bảo mật	                Kém (F12 sửa được)	                        Tốt hơn (server giữ)
+Độ phức tạp	            Trung bình (phải truyền qua nhiều form)	    Dễ hơn khi form lớn
+RAM Server	            Không tốn	                                Có nguy cơ phình RAM
+Dữ liệu lớn (50 field)	Rất rối	                                    Phù hợp
