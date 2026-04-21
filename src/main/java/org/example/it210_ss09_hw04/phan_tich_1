@@ -1,0 +1,18 @@
+Giải pháp 1: <input type="hidden"> (đẩy qua lại giữa Client ↔ Server)
+Ý tưởng:
+Sau mỗi bước, dữ liệu được render lại vào form kế tiếp bằng hidden field
+Luồng:
+Bước 1 -> submit -> Server
+Server trả về Bước 2 + nhét data cũ vào hidden input
+Bước 2 submit -> mang theo toàn bộ data B1 + B2
+Bước 3 -> đủ data → lưu DB
+
+Giải pháp 2: @SessionAttributes (lưu tạm trên Server)
+Ý tưởng:
+Lưu object form vào Session (server giữ)
+Mỗi bước chỉ cập nhật thêm dữ liệu
+
+Luồng:
+Bước 1 -> tạo object sellerForm
+Bước 2 -> update thêm field
+Bước 3 -> lấy toàn bộ object -> lưu DB
